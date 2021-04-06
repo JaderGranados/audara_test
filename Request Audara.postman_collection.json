@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "0b7c9504-8a77-4198-8c8e-83ea4221fd50",
+		"name": "Request Audara",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Show callRate (2500)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2500&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2500"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create callRate (2510)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"DEV_MAC\", \r\n    \"prefix\": \"05\", \r\n    \"number_of_digits\": 12, \r\n    \"min_rate\": 1, \r\n    \"sec_rate\": 0.1, \r\n    \"currency_id\": 2, \r\n    \"status\": \"ACTIVE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2510",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2510"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get callRates list (2511)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update callRate (2512)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"DEV_CELULAR_UPDATE\", \r\n    \"prefix\": \"05\", \r\n    \"number_of_digits\": 12, \r\n    \"min_rate\": 1, \r\n    \"sec_rate\": 0.1, \r\n    \"currency_id\": 2, \r\n    \"status\": \"ACTIVE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2510&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2510"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete callRate (2513)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2513&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2513"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change status callRate to ACTIVE (2514)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2514&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2514"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change status callRate to INACTIVE (2515)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2515&id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2515"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency basic list (2518)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/?apiCode=2518",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apiCode",
+							"value": "2518"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rates basic list (2519)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
